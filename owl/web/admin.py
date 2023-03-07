@@ -4,7 +4,7 @@ from web.models import Monuments
 
 
 class MyModelAdmin(admin.ModelAdmin):
-    fields = ('id','name', 'description')
-    readonly_fields = ('id',)
+    fields = ('id','name', 'description','slug')
+    readonly_fields = ('id','slug')
 
 admin.site.register(Monuments, MyModelAdmin)
